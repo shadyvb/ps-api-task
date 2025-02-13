@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\VulnerabilityController;
+use Illuminate\Support\Facades\Route;
 
 Route::apiResource('vulnerabilities', VulnerabilityController::class);

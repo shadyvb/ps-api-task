@@ -44,7 +44,7 @@ trait ApiResponse
         return response()->json([
             'success' => false,
             'message' => 'Validation failed',
-            'errors' => $errors
+            'errors' => $errors,
         ], 422);
     }
 }
