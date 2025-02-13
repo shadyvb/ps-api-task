@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('vulnerabilities', function (Blueprint $table) {
             $table->id();
+            $table->string('code')->unique();
+            $table->string('title');
+            $table->text('description');
+            $table->json('references')->nullable();
+            $table->json('cwes')->nullable();
             $table->timestamps();
         });
     }
